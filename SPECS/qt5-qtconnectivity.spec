@@ -4,8 +4,8 @@
 
 Summary: Qt5 - Connectivity components
 Name:    qt5-%{qt_module}
-Version: 5.15.3
-Release: 1%{?dist}
+Version: 5.15.9
+Release: 2%{?dist}
 
 # See LICENSE.GPL3, respectively, for exception details
 License: LGPLv2 with exceptions or GPLv3 with exceptions
@@ -135,6 +135,14 @@ popd
 %endif
 
 %changelog
+* Tue Apr 25 2023 Jan Grulich <jgrulich@redhat.com> - 5.15.9-2
+- Rebuild (elfutils#2188064)
+  Resolves: bz#2175730
+
+* Tue Apr 18 2023 Jan Grulich <jgrulich@redhat.com> - 5.15.9-1
+- 5.15.9
+  Resolves: bz#2175730
+
 * Mon Mar 28 2022 Jan Grulich <jgrulich@redhat.com> - 5.15.3-1
 - 5.15.3
   Resolves: bz#2061357
